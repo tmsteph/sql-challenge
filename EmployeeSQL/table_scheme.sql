@@ -1,3 +1,15 @@
+
+--DO NOT RUN DROP TABLE UNLESS YOU WANT TO DELETE AND RELOAD TABLE DATA
+DROP TABLE IF EXISTS departments CASCADE;
+DROP TABLE IF EXISTS dept_emp CASCADE;
+DROP TABLE IF EXISTS dept_manager CASCADE;
+DROP TABLE IF EXISTS employees CASCADE;
+DROP TABLE IF EXISTS salaries CASCADE;
+DROP TABLE IF EXISTS titles CASCADE;
+
+--MUST DROP TABLE IN ORDER TO ADD IT. 
+--lOOK UP HOW TO MODIFY TABLE IF YOU WANT TO NOT RELOAD TABLE DATA
+
 CREATE TABLE "titles" (
     "title_id" VARCHAR(10)   NOT NULL,
     "title" VARCHAR(30)   NOT NULL,
@@ -17,11 +29,11 @@ CREATE TABLE "departments" (
 CREATE TABLE "employees" (
     "emp_no" INTEGER   NOT NULL,
     "emp_title_id" VARCHAR(10)   NOT NULL,
-    "birth_date" VARCHAR(8)   NOT NULL,
+    "birth_date" VARCHAR(10)   NOT NULL,
     "first_name" VARCHAR(20)   NOT NULL,
     "last_name" VARCHAR(20)   NOT NULL,
     "sex" VARCHAR(1)   NOT NULL,
-    "hire_date" VARCHAR(8)   NOT NULL,
+    "hire_date" VARCHAR(10)   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
