@@ -1,6 +1,5 @@
 # sql-challenge
 
-
 ### Create table schema for each of the six csv files.
 1. Specify data types... 
 	a. primary keys: check to see if column is unique. Otherwise Create composit key. 
@@ -18,3 +17,8 @@
 	6. List all employees in the Sales department.... Include their employee number, last_name, first_name, and dept_name
 	7. list all employees in the sales and development departments, including their employee number, last name, first name, and department name. 
 	8. In descinding order... List frequency count of employee last names... or how many employees share each last name?  
+
+
+I was able to do all queries and stored images of the results in the "query_screenshots" directory. 
+
+Extra credit was interesting. I also was able to complete using jupyter notebooks connecting with sqlalchemy to the postgresql database. I included the notbebook as well as a "notebook_images" folder for quick viewing of gaphs... 
